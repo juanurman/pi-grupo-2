@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    padding: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(120deg, #6D6A67, #90877E);
+    height: 100vh;
+}
+.head{
+    order: 0;
+    height: 16vh;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+/* Barra de navegacion */
+.h-nav{
+    display: flex;
+    width: 100vw;
+    justify-content: start;
+    align-items: center;
+}
+/* Seccion del logo */
+.h-n-sect{
+    display: flex;
+    width: 25%;
+}
+/* Click de la imagen */
+.h-n-s-a{
+    height: 10vh;
+    margin-left: 3vw;
+}
+/* Logo */
+.h-n-s-a-img{
+    width: 100%;
+    height: 9vh;
+}
+/* Seccion del buscador */
+.h-n-sect1{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+/* Form */
+.h-n-s1-f{
+    display: flex;
+}
+/* Buscador */
+.h-n-s1-f-i{
+    width: 25vw;
+    height: 5vh;
+    border-radius: 5px;
+    text-align: center;
+    color: #1a1a1a;
+}
+/* Boton del buscador */
+.h-n-s1-f-b{
+    height: 5vh;
+    width: 8vw;
+    border-radius: 10px;
+    color: #1a1a1a;
+    background-color: #242526;
+}
+/* Secicon del carrito y login */
+.h-n-sect2{
+    display: flex;
+    justify-content: end;
+    width: 25%;
+    padding: 3vw;
+}
+/* imagen carrito */
+.h-n-s2-img-a{
+    width: 2vw;
+}
+/* Login y register */
+.h-n-s2-a{
+    margin: 0 1vw;
+    color: white;
+}
+
+/* caja formulario */
+.formulario{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: #F5E9DB;
+    border-radius: 8px;
+}
+
+/* h1 del formulario */
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 5px solid silver;
+}
+/* espacio inicio de sesion */
+.formulario form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+/* casillero email */
+.email{
+    position: relative;
+    margin: 30px 0;
+}
+/* casillero constrasenia */
+.contrasena{
+    position: relative;
+    margin: 30px 0;
+}
+/* input casillero email */
+.email input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    outline: none;
+}
+/* label casillero email */
+.email label{
+    position: absolute;
+    top: 50%;
+    left: 270px;
+    color: gray;
+    transform: translatey(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+/* input casillero contrasenia */
+.contrasena input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    background: none;
+    outline: none;
+}
+/* label casillero contrasenia */
+.contrasena label{
+    position: absolute;
+    top: 50%;
+    left: 230px;
+    color: gray;
+    transform: translatey(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+
+
+
+
