@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
 body {
     margin: 0;
     padding: 0%;
@@ -93,8 +100,8 @@ body {
 /* h1 del formulario */
 .formulario h1{
     text-align: center;
-    padding: 0 0 20px 0;
-    border-bottom: 5px solid silver;
+    padding: 15px 0 20px 0;
+    border-bottom: 4px solid silver;
 }
 /* espacio inicio de sesion */
 .formulario form{
@@ -153,15 +160,49 @@ body {
 
 /* boton ingresar */
 .ingresar{
-    text-align: center;
-    padding: 0 0 10px 0;
-    top: 50%;
-    left: 10%;
-    transform: translate(30%, 300%);
-    width: 200px;
-    background: #564F4A;
-    border-radius: 8px;
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6D6A67;
+    border-radius: 16px;
+    width: 320px;
+    height: 5vh;
+    
+
+}
+
+/* texto ingresar */
+.ref-ingresar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #242526;
+
+}
+
+/* boton crear cuenta */
+.no-cuenta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6D6A67;
+    border-radius: 16px;
+   
+    
+    
+
+}
+
+/* texto crear cuenta */
+.no-cuenta-ref{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #242526;
+    
+
 }
 
 
