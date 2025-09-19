@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -6,10 +8,11 @@
     text-decoration: none;
 }
 body {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: linear-gradient(120deg, #6D6A67, #90877E);
+    background-image: url("../img/fondologin.png");
     height: 100vh;
 }
 .head{
@@ -85,23 +88,28 @@ body {
     margin: 0 1vw;
     color: white;
 }
-
+main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
 /* caja formulario */
 .formulario{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    background: #F5E9DB;
-    border-radius: 8px;
+
+    width: 30vw;
+    height: 52vh;
+    background: #ffffff;
+    border: solid black 3px;
+    padding: 15px;
+    
 }
 
 /* h1 del formulario */
-.formulario h1{
+.formulario h2{
     text-align: center;
-    padding: 15px 0 20px 0;
-    border-bottom: 4px solid silver;
+    padding: 15px 0 15px 0;
 }
 /* espacio inicio de sesion */
 .formulario form{
@@ -122,7 +130,7 @@ body {
 .email input{
     width: 100%;
     padding: 0 5px;
-    height: 40px;
+    height: 45px;
     font-size: 16px;
     background: none;
     outline: none;
@@ -131,27 +139,7 @@ body {
 .email label{
     position: absolute;
     top: 50%;
-    left: 270px;
-    color: gray;
-    transform: translatey(-50%);
-    font-size: 16px;
-    pointer-events: none;
-}
-
-/* input casillero contrasenia */
-.contrasena input{
-    width: 100%;
-    padding: 0 5px;
-    height: 40px;
-    font-size: 16px;
-    background: none;
-    outline: none;
-}
-/* label casillero contrasenia */
-.contrasena label{
-    position: absolute;
-    top: 50%;
-    left: 230px;
+    left: 7px;
     color: gray;
     transform: translatey(-50%);
     font-size: 16px;
@@ -165,8 +153,9 @@ body {
     align-items: center;
     background-color: #6D6A67;
     border-radius: 16px;
-    width: 320px;
+    width: 100%;
     height: 5vh;
+    margin: 10px 0;
     
 
 }
@@ -181,29 +170,12 @@ body {
 
 }
 
-/* boton crear cuenta */
-.no-cuenta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #6D6A67;
-    border-radius: 16px;
+
+    
+    
    
     
-    
 
-}
-
-/* texto crear cuenta */
-.no-cuenta-ref{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: #242526;
-    
-
-}
 
 
 
