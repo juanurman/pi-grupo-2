@@ -6,12 +6,14 @@
     margin: 0;
     list-style-type: none;
     text-decoration: none;
+    font-size: 100%;
 }
 
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-wrap: wrap;
+    background-color: #403f40;
 }
 
 /* Header */
@@ -79,8 +81,7 @@ body {
 }
 /* Imagen de lupa */
 .h-n-s1-f-b-img{
-    width: 20%;
-    height: 5vh;
+    width: 30%;
     margin-right: 4vw;
 }
 /* Secicon del carrito y login */
@@ -99,26 +100,37 @@ body {
     margin: 0 1vw;
     color: white;
 }
+
+
+
+
 /* Banner */
 .banner{
     display: flex;
     justify-content: center;
     width: 100%;
     height: 20vh;
+    margin-bottom: 5vh;
+    background-color: white;
 
 }
 /* Imagen banner */
 .img-b{
-    width: 100%;
-    height: 20vh;
+    width: 80%;
+    
     
 }
-/* Main  */
+
+
+
+
+                            /* Main  */
 main{
     order: 1;
     width: 70%;
     margin: 0 2vw;
     background-color: #F5F5F7;
+    
 }
 /* Section Main */
 .m-s{
@@ -138,56 +150,163 @@ main{
 .m-s-a{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 27%;
     background-color: white;
     margin: 2vw;
     padding: 1vw;
+    border-radius: 10px;
 }
 /* Imagen de productos */
 .m-s-a-img{
-    margin-top: 1vh;
+    margin: 1vh;
     width: 30%;
+    background-color: #F5F5F7 ;
+    
+}
+/* Imagen Mac */
+.m-s-a-img-mac{
+    margin: 1vh;
+    width: 45%;
     background-color: #F5F5F7 ;
     
 }
 /* Ver mas productos */
 .m-s-a-s-a{
     text-align: center;
+    font-size: 90%;
     width: 50%;
-    background-color: rgb(6 174 207);
+    background-color: rgb(0 113 227);
     border-radius:20px;
     color: white;
 }
+
+
+                    /* Fin main  */
+
+
+
 /* Aside */
 aside{
     order: 2;
     height: 50vh;
     width: 20%;
-    background-color: #f0f0f0;
+    background-color: #F5F5F7;
 }
+/* Box de la lista */
 .aside-sect{
     margin: 4vh 1.5vw;
 }
 .a-s-ul{
+    height: 34vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 30vh;
 }
+.a-s-ul-art{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;    
+}
+/* Imagen aside */
+.a-s-ul-a-img{
+    width: 1.5vw;
+    height: 2vw;
+    margin-right: 1vw;
+}
+/* Lista de categorias */
+.a-s-ul-a-a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 5vh;
+    color: black;
+    text-decoration: underline;
+}
+br{
+    width: 80%;
+    color: gray;
+}
+/* H3 Categorias */
 .a-s-h3{
     margin-bottom: 4vw;
 }
+/* Categorias */
 .a-s-ul-a{
     width: 15%;
     text-decoration: underline;
     color:black;
 }
-footer{
+/* Nuevos lanzamientos */
+.sect-lanzamientos{
     order: 4;
     width: 100%;
-    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2vw;
+    background-color: #F5F5F7;
+}
+/* h3 lanzamientos */
+.s-l-h3{
+    margin: 2vw 0 0 2vw;
+    font-size: 1.5vw;
+    width: 100%;
+}
+/* Caja de productos */
+.s-l-art{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    margin: 2vw 1vw;
+    padding: 1vw;
+    background-color: white;
+    border-radius: 10px;
+}
+/* Imagen de producto */
+.s-l-a-img{
+    width: 30%;
+}
+/* Inicio footer */
+footer{
+    order: 5;
+    width: 100%;
+    height: 25vh;
+    margin-top: 5vh;
     background-color: #242526;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+/* Nav y nombres */
+.f-sect{
+    display: flex;
+    width: 80%;
+    margin-left: 10vw;
+}
+/* Nav */
+.f-s-art{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+/* Nombres */
+.f-s-a-ul-li{
+    margin: 1vh 0;
+    color: white;
+}
+/* Logo */
+.f-sect2{
+    width: 20%;
+    margin-right: 10vw;
+}
+/* Logo */
+.f-s2-img{
+    width: 100%;
 }
 
