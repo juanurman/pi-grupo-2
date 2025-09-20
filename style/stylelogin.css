@@ -101,7 +101,6 @@ main
     width: 30vw;
     height: 52vh;
     background: #ffffff;
-    border: solid black 3px;
     padding: 15px;
     
 }
@@ -116,31 +115,30 @@ main
     padding: 0 40px;
     box-sizing: border-box;
 }
-/* casillero email */
+/* casillero email y contrasenia */
 .email{
     position: relative;
+    border-bottom: 2px solid gray;
     margin: 30px 0;
 }
-/* casillero constrasenia */
-.contrasena{
-    position: relative;
-    margin: 30px 0;
-}
+
 /* input casillero email */
 .email input{
     width: 100%;
     padding: 0 5px;
-    height: 45px;
+    height: 40px;
     font-size: 16px;
     background: none;
     outline: none;
+    border: none;
+
 }
 /* label casillero email */
 .email label{
     position: absolute;
     top: 50%;
     left: 7px;
-    color: gray;
+    color: #b0aba6;
     transform: translatey(-50%);
     font-size: 16px;
     pointer-events: none;
@@ -149,13 +147,15 @@ main
 /* boton ingresar */
 .ingresar{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #6D6A67;
-    border-radius: 16px;
+    background-color: #5e5d5d;
+    text-align: center;
+    border-radius: 10px ;
     width: 100%;
-    height: 5vh;
-    margin: 10px 0;
+    height: 7vh;
+    margin: 15px 0;
+    align-items: center;
+    
+
     
 
 }
@@ -166,8 +166,8 @@ main
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: #242526;
-
+    color: white;
+    text-align: center;
 }
 
 
