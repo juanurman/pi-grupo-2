@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/stylelogin.css">
+    <link rel="stylesheet" href="./style/styleregister.css">
     <title>Register</title>
 </head>
 <body>
@@ -34,25 +34,35 @@
             </section>
         </nav>
     </header>
+<!-- fin del header-->
+
+<!-- formulario login-->
     <main>
         <section>
             <div class="formulario">
-                <h2>Inicio de sesion</h2>
-                <form method="post">
+                <h2>Registro de usuario</h2>
+                <form method="post" action="./index.html">
                     <div class="email" >
                         <label for="email"></label>
-                        <input type="email" maxlength="33" placeholder="Email">    
+                        <input type="email" maxlength="33" placeholder="Email" required>    
                     </div>
-                    <div class="email">
-                        <label for="email"></label>
-                        <input type="password" maxlength="25" placeholder="Contraseña">
+                    <div class="password">
+                        <label for="password"></label>
+                        <input type="password" maxlength="25" placeholder="Contraseña" required>
                     </div>
-                    <div class="ingresar">
-                        <a href="./index.html" class="ref-ingresar">Ingresar</a>
+                    <div class="password">
+                        <label for="password"></label>
+                        <input type="password" maxlength="25" placeholder="Repetir contraseña" required>
                     </div>
-                    <div class="crear-cuenta">
-                     ¿No tienes cuenta?<a href="./register.html" class="ref-crear-cuenta"> Registrate</a> 
-
+                    <div class="TOS">
+                        <label for="terminos y condiciones">¿Acepta los terminos y condiciones?</label>
+                        <input type="checkbox" required>
+                    </div>
+                    <div class="registrar">
+                        <button type="submit" class="ref-registrar">Registrarme</a>
+                    </div>
+                    <div>
+                    ¿Ya tienes una cuenta?<a href="./register.html" class="ref-cuenta-existente"> inicia sesion</a> 
                     </div>
                 </form>
             </div>
