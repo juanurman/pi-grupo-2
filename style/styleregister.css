@@ -204,3 +204,34 @@ main
     text-align: center;
     cursor: pointer;
 }
+
+/* configuracion visualizacion celular*/
+
+@media (max-width: 420px) {
+/*caja formulario*/
+.formulario {
+width: 65vw;
+height: 74vh;
+background: #ffffff;
+padding: 10px;
+margin-top: 70px;
+border-radius: 4px;
+}
+
+/* casillero email */
+.email{
+position: relative;
+border-bottom: 2px solid gray;
+margin: 15px 0;
+}
+
+/*texto TOS*/
+.TOS {
+padding: 0%;
+}
+
+/*texto registro de usuario*/
+.texto-caja-register {
+font-size: 150%;
+}
+}

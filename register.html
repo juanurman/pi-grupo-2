@@ -7,24 +7,30 @@
     <title>Register</title>
 </head>
 <body>
+    <!-- Header -->
     <header class="head">
         <nav class="h-nav">
+            <!-- Logo -->
             <section class="h-n-sect">
-                <a href="./index.html" class="h-n-s-a">
+                <a href="/index.html" class="h-n-s-a">
                     <img src="./img/logo_fondo_blanco.jpg" alt="" class="h-n-s-a-img">
                 </a>
             </section>
 
+            <!-- Buscador -->
             <section class="h-n-sect1">
-                <form action="/" method="get" class="h-n-s1-f" >
-                    <input type="text" placeholder=""
+                <form action="/resultado de busqueda" method="get" class="h-n-s1-f" >
+                    <input type="text" placeholder="¿Qué estas buscando?"
                     class="h-n-s1-f-i">
+                    <a href="">
                     <button type="submit" class="h-n-s1-f-b">
-                            <img src="./img/icons8-magnifying-glass-50.png"alt="">
+                        <img src="./img/icons8-magnifying-glass-50.png"alt="" class="h-n-s1-f-b-img">
+                    </a>
                     </button>
                 </form>
             </section>
 
+            <!-- Carrito, Login y Register -->
             <section class="h-n-sect2">
                 <a href="" class="h-n-s2-a-img">
                     <img src="./img/icons8-paper-bag-64.png" alt="" class="h-n-s2-img-a">
@@ -34,25 +40,25 @@
             </section>
         </nav>
     </header>
-<!-- fin del header-->
+    <!-- Fin Header -->
 
-<!-- formulario login-->
+<!-- formulario register-->
     <main>
         <section>
             <div class="formulario">
-                <h2>Registro de usuario</h2>
+                <h2 class="texto-caja-register">Registro de usuario</h2>
                 <form method="post" action="./index.html">
                     <div class="email" >
                         <label for="email"></label>
-                        <input type="email" maxlength="33" placeholder="Email" required>    
+                        <input class="input-mail" type="email"  placeholder="Email" required>    
                     </div>
                     <div class="password">
                         <label for="password"></label>
-                        <input type="password" maxlength="25" placeholder="Contraseña" required>
+                        <input class="input-password" type="password" maxlength="20" placeholder="Contraseña" required>
                     </div>
                     <div class="password">
                         <label for="password"></label>
-                        <input type="password" maxlength="25" placeholder="Repetir contraseña" required>
+                        <input type="input-password" maxlength="20" placeholder="Repetir contraseña" required>
                     </div>
                     <div class="TOS">
                         <label for="terminos y condiciones">¿Acepta los terminos y condiciones?</label>
