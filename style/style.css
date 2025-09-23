@@ -89,7 +89,7 @@ body {
     display: flex;
     justify-content: end;
     width: 25%;
-    padding: 3vw;
+    padding: 1vw;
 }
 /* imagen carrito */
 .h-n-s2-img-a{
@@ -101,7 +101,7 @@ body {
     color: white;
 }
 
-
+/* FIn Headeer */
 
 
 /* Banner */
@@ -271,6 +271,7 @@ br{
 .s-l-a-img{
     width: 30%;
 }
+
 /* Inicio footer */
 footer{
     order: 5;
