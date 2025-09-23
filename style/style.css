@@ -313,3 +313,152 @@ footer{
 .f-s2-img{
     width: 100%;
 }
+/* Resolución Mobile */
+@media (max-width: 420px){
+    
+                /* Header */
+.head{
+    width: 100%;
+    order: 0;
+    height: 15vh;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+/* Barra de navegacion */
+.h-nav{
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+}
+/* Seccion del logo */
+.h-n-sect{
+    display: flex;
+    width: 25%;
+}
+/* Click de la imagen */
+.h-n-s-a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin-left: 3vw;
+}
+/* Logo */
+.h-n-s-a-img{
+    width: 100%;
+    height: 5vh;
+}
+/* Seccion del buscador */
+.h-n-sect1{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+/* Form */
+.h-n-s1-f{
+    display: flex;
+    width: 60%;
+}
+/* Buscador */
+.h-n-s1-f-i{
+    width: 100%;
+    height: 5vh;
+    border-radius: 5px;
+    text-align: center;
+    color: #1a1a1a;
+}
+/* Boton del buscador */
+.h-n-s1-f-b{
+    height: 5vh;
+    width: 30%;
+    border-radius: 10px;
+    color: #1a1a1a;
+    background-color: #242526;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+/* Imagen de lupa */
+.h-n-s1-f-b-img{
+    width: 30%;
+    margin-right: 4vw;
+}
+/* Secicon del carrito y login */
+.h-n-sect2{
+    display: flex;
+    justify-content: end;
+    width: 25%;
+    padding: 1vw;
+}
+/* imagen carrito */
+.h-n-s2-img-a{
+    width: 60%;
+}
+/* Login y register */
+.h-n-s2-a{
+    margin: 0 1vw;
+    color: white;
+}
+
+            /* Fin Headeer */
+
+aside{
+    order: 1;
+    height: 25vh;
+    width: 100%;
+    background-color: #F5F5F7;
+    margin-bottom: 10vw;
+}
+
+.a-s-ul{
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.a-s-ul-art{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32%;    
+}
+/* Imagen aside */
+.a-s-ul-a-img{
+    display: none;
+    width: 3vw;
+    margin-right: 1vw;
+}
+/* Lista de categorias */
+.a-s-ul-a-a{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 5vh;
+    color: black;
+    text-decoration: underline;
+}
+hr{
+    display: none;
+    width: 80%;
+    color: gray;
+}
+/* H3 Categorias */
+.a-s-h3{
+    margin-bottom: 4vw;
+}
+/* Categorias */
+.a-s-ul-a{
+    width: 15%;
+    text-decoration: underline;
+    color:black;
+}
+        /* Fin aside */
+        main{
+            order: 2;
+        }
+}
