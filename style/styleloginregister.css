@@ -72,7 +72,7 @@ body {
     color: #1a1a1a;
     background-color: #242526;
 }
-/* Seccion del carrito y login */
+/* Secicon del carrito y login */
 .h-n-sect2{
     display: flex;
     justify-content: end;
@@ -93,29 +93,54 @@ main
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-}
-/* caja formulario */
-.formulario{
-    width: 30vw;
-    height: 70vh;
-    background: #ffffff;
-    padding: 15px;
-    margin-top: 40px;
-    border-radius: 4px;
+    min-height: 70vh;
 }
 
-/* h1 del formulario */
-.formulario h2{
+/* caja formulario registro */
+.formulario-register {
+    box-sizing: border-box;
+    height: 100%;
+    height: 100%;        
+    margin-top: 20%;
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 16px;
+}
+
+/* caja formulario login */
+.formulario-login {
+    box-sizing: border-box;
+    height: 100%;
+    height: 100%;        
+    margin-top: 20%;
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 16px;
+} 
+
+/* texto principal del formulario login */
+.formulario-login h2{
+    text-align: center;
+    padding: 40px 100px 20px 100px;
+}
+/* espacio inicio de sesion */
+.formulario-login form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+/* texto principal del formulario register */
+.formulario-register h2{
     text-align: center;
     padding: 15px 0 15px 0;
 }
 /* espacio registro del usuario */
-.formulario form{
+.formulario-register form{
     padding: 0 40px;
     box-sizing: border-box;
 }
-/* casillero email */
+
+/* casillero email y contrasenia */
 .email{
     position: relative;
     border-bottom: 2px solid gray;
@@ -143,7 +168,6 @@ main
     font-size: 16px;
     pointer-events: none;
 }
-
 /* casillero password */
 .password{
     position: relative;
@@ -172,9 +196,40 @@ main
     font-size: 16px;
     pointer-events: none;
 }
+
+/* boton ingresar */
+.ingresar{
+    display: flex;
+    background-color: #5e5d5d;
+    text-align: center;
+    border-radius: 10px ;
+    width: 100%;
+    height: 7vh;
+    margin: 15px 0;
+    align-items: center;
+    cursor: pointer;
+    padding: 30px;
+}
+
 /*texto TOS*/
 .TOS {
-    padding: 4%;
+    padding: 2%;
+}
+
+/* texto ingresar */
+.ref-ingresar{
+    background: none;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
 }
 
 /* boton registrar */
@@ -205,33 +260,38 @@ main
     cursor: pointer;
 }
 
+/* texto register ya tienes una cuenta*/
+.ref-cuenta-existente{
+    padding-bottom: 20%;
+}
 /* configuracion visualizacion celular*/
 
 @media (max-width: 420px) {
 /*caja formulario*/
-.formulario {
-width: 65vw;
-height: 74vh;
-background: #ffffff;
-padding: 10px;
-margin-top: 70px;
-border-radius: 4px;
+
+.formulario-register {
+    width: 80%;
+    margin-left: 10%;
+    height: 100%;
+    background: #ffffff;
+    padding: 4%;
+    margin-top: 20%;
+    border-radius:10%;
+}
 }
 
-/* casillero email */
-.email{
-position: relative;
-border-bottom: 2px solid gray;
-margin: 15px 0;
-}
+/* configuracion visualizacion celular*/
 
-/*texto TOS*/
-.TOS {
-padding: 0%;
-}
+@media (max-width: 420px) {
+/*caja formulario*/
 
-/*texto registro de usuario*/
-.texto-caja-register {
-font-size: 150%;
+.formulario-login {
+    width: 80%;
+    margin-left: 10%;
+    height: 100%;
+    background: #ffffff;
+    padding: 4%;
+    margin-top: 20%;
+    border-radius: 16px;
 }
 }
