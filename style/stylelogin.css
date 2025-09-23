@@ -171,30 +171,20 @@ main
     height: 7vh;
     margin: 15px 0;
     align-items: center;
-    
-
-    
-
+    cursor: pointer;
 }
 
 /* texto ingresar */
 .ref-ingresar{
+    background: none;
+    border: none;
+    outline: none;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
     color: white;
     text-align: center;
+    cursor: pointer;
 }
-
-
-    
-    
-   
-    
-
-
-
-
-
-

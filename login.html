@@ -40,26 +40,24 @@
             </section>
         </nav>
     </header>
-    <!-- Fin Header -->
     <main>
         <section>
             <div class="formulario">
                 <h2>Inicio de sesion</h2>
-                <form method="post">
+                <form method="post" action="./index.html">
                     <div class="email" >
                         <label for="email"></label>
-                        <input type="email" maxlength="33" placeholder="Email">    
+                        <input type="email" maxlength="33" placeholder="Email" required>    
                     </div>
                     <div class="email">
                         <label for="email"></label>
-                        <input type="password" maxlength="25" placeholder="Contraseña">
+                        <input type="password" maxlength="25" placeholder="Contraseña" required>
                     </div>
                     <div class="ingresar">
-                        <a href="./index.html" class="ref-ingresar">Ingresar</a>
+                        <button type="submit"  class="ref-ingresar">Ingresar</a>
                     </div>
                     <div class="crear-cuenta">
-                     ¿No tienes cuenta?<a href="./register.html" class="ref-crear-cuenta"> Registrate</a> 
-
+                    <p>¿No tienes cuenta? <a href="./register.html" class="ref-crear-cuenta"> Registrate</a> </p>
                     </div>
                 </form>
             </div>
