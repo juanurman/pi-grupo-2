@@ -16,7 +16,7 @@ body {
     background-color: #403f40;
 }
 
-/* Header */
+                /* Header */
 .head{
     width: 100%;
     order: 0;
@@ -101,7 +101,7 @@ body {
     color: white;
 }
 
-/* FIn Headeer */
+            /* Fin Headeer */
 
 
 /* Banner */
@@ -239,6 +239,9 @@ br{
     text-decoration: underline;
     color:black;
 }
+        /* Fin aside */
+
+
 /* Nuevos lanzamientos */
 .sect-lanzamientos{
     order: 4;
@@ -310,4 +313,3 @@ footer{
 .f-s2-img{
     width: 100%;
 }
-
