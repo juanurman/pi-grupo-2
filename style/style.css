@@ -612,7 +612,7 @@ width: 270px;
 .a-s-a{
     display: flex;
     flex-wrap: wrap; 
-    justify-self: center;
+    justify-content: center;
     align-items: center;
     background-color: white;
     height: 25vh;
@@ -620,9 +620,10 @@ width: 270px;
 }
 .a-s-a-img{
     width: 2vw;
+    margin: 0 1vw;
 }
 .a-s-a-p{
-    width: 80%;
+    width: 70%;
 }
 .a-s-a-p-s{
     width: 2vw;
@@ -1008,7 +1009,7 @@ hr{
     background-color: white;
     width: 25%;
     height: 25vh;
-    margin: 10vh 1vw;
+    margin: 3vh 1vw;
     font-size: 3vw;
 }
 .a-s-a-img{
@@ -1036,7 +1037,7 @@ hr{
 
 
 /*login.html / visualizacion 420 px*/
-/* 
+
 .formulario-login {
     width: 80%;
     margin-left: 10%;
@@ -1050,5 +1051,6 @@ hr{
     text-align: center;
     padding: 40px 40px 10px 40px;
     font-size: 36px;
-    } */
+    }
+
 }
