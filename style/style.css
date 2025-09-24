@@ -16,7 +16,7 @@ body {
     background-color: #403f40; 
 }
 
-                /* Header */
+/* Header */
 .head{
     width: 100%;
     order: 0;
@@ -89,15 +89,18 @@ body {
     display: flex;
     justify-content: end;
     width: 25%;
-    padding: 1vw;
+    padding: 2vw;
+}
+.h-n-s2-a-img{
+    width: 10%;
 }
 /* imagen carrito */
 .h-n-s2-img-a{
-    width: 60%;
+    width: 70%;
 }
 /* Login y register */
 .h-n-s2-a{
-    margin: 0 1vw;
+    margin: 0 .5vw;
     color: white;
 }
 
@@ -124,7 +127,7 @@ body {
 
 
 
-                            /* Main  */
+                            /* Main Home */
 main{
     order: 1;
     width: 70%;
