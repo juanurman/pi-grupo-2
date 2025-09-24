@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,100&display=swap');
+
 
 *{
     box-sizing: border-box;
@@ -10,7 +12,7 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif, 'Montserrat';
     display: flex;
     flex-wrap: wrap;
     background-color: #403f40; 
@@ -149,17 +151,34 @@ footer{
     /* Banner Home*/
 .banner{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     width: 100%;
     height: 20vh;
     margin-bottom: 5vh;
     background-color: white;
+    padding: 0 2%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* texto principal del banner*/
+.texto-principal-banner {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 180%;
+    margin: 14px 6%;
+    min-width: 230px;
+}
+
+/* imagen productos apple banner */
+.prod-apple-banner {
+    margin:0 10%;
 
 }
-/* Imagen banner */
-.img-b{
-    width: 80%;
+.iphone-clickeable-banner {
+width: 270px;
 }
+
     /* Fin Banner Home */
 
 
