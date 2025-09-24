@@ -111,7 +111,7 @@ footer{
     width: 100%;
     height: 25vh;
     margin-top: 5vh;
-    background-color: #242526;
+    background-color: #1a1a1a;
     display: flex;
     justify-content: space-around;
     align-items: center; 
@@ -316,7 +316,7 @@ footer{
 .s-l-a-img{
     width: 30%;
 }
-    /* Nuevos Lanzamientos Fin */
+    /* FIn Nuevos Lanzamientos */
 /* Fin Home */
 
 
@@ -613,54 +613,20 @@ footer{
 /*register.html / visualizacion 420 px*/
 
 @media (max-width: 420px) {
-.formulario-register {
-    width: 80%;
-    margin-left: 10%;
-    height: 100%;
-    background: #ffffff;
-    padding: 4%;
-    margin-top: 5%;
-    border-radius:41.3px;
-}
-}
+    /* Resolución Mobile */
 
-/*login.html / visualizacion 420 px*/
-
-@media (max-width: 420px) {
-.formulario-login {
-    width: 80%;
-    margin-left: 10%;
-    height: 100%;
-    background: #ffffff;
-    padding: 4%;
-    margin-top: 8%;
-    border-radius: 33.2px;
-}
-.formulario-login h2{
-    text-align: center;
-    padding: 40px 40px 10px 40px;
-    font-size: 36px;
-}
-}
-
-
-/* Resolución Mobile */
-@media (max-width: 420px){
     
                 /* Header */
 .head{
     width: 100%;
     order: 0;
-    height: 15vh;
-    background-color: #1a1a1a;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    
+    height: 20vh;
+    background-color: #1a1a1a;    
 }
 /* Barra de navegacion */
 .h-nav{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     justify-content: start;
     align-items: center;
@@ -685,14 +651,19 @@ footer{
 }
 /* Seccion del buscador */
 .h-n-sect1{
+    order: 3;
     display: flex;
     justify-content: center;
-    width: 50%;
+    align-items: center;
+    width: 100%;
+    margin-left: 10%;
 }
 /* Form */
 .h-n-s1-f{
     display: flex;
-    width: 60%;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 /* Buscador */
 .h-n-s1-f-i{
@@ -715,19 +686,20 @@ footer{
 }
 /* Imagen de lupa */
 .h-n-s1-f-b-img{
-    width: 30%;
+    width: 40%;
     margin-right: 4vw;
 }
 /* Secicon del carrito y login */
 .h-n-sect2{
     display: flex;
     justify-content: end;
-    width: 25%;
+    align-items: center;
+    width: 75%;
     padding: 1vw;
 }
 /* imagen carrito */
 .h-n-s2-img-a{
-    width: 60%;
+    width: 80%;
 }
 /* Login y register */
 .h-n-s2-a{
@@ -735,14 +707,32 @@ footer{
     color: white;
 }
 
-            /* Fin Headeer */
+            /* Fin Header */
+            /* Banner Home*/
+.banner{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+    background-color: white;
+    margin: 0;
 
-aside{
+}
+/* Imagen banner */
+.img-b{
+    width: 80%;
+}
+    /* Fin Banner Home */
+
+            /* Inicio Aside */
+
+.aside-home{
     order: 1;
     height: 25vh;
     width: 100%;
-    background-color: #F5F5F7;
+    background-color: #403f40;
     margin-bottom: 10vw;
+
 }
 
 .a-s-ul{
@@ -756,6 +746,8 @@ aside{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
+    margin: 1vw 5vw;
     width: 32%;    
 }
 /* Imagen aside */
@@ -775,8 +767,6 @@ aside{
 }
 hr{
     display: none;
-    width: 80%;
-    color: gray;
 }
 /* H3 Categorias */
 .a-s-h3{
@@ -789,7 +779,130 @@ hr{
     color:black;
 }
         /* Fin aside */
-        main{
-            order: 2;
-        }
+        /* Main Home */
+.main-home{
+    order: 2;
+    width: 100%;
+    background-color: #F5F5F7;
+    
+}
+    /* Section Main */
+.m-s{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    /* Destacados main */
+.m-s-h2{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    margin: 2vw 2vw ;
+}
+    /* Box Productos */
+.m-s-a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: white;
+    margin: 2vw;
+    padding: 1vw;
+    border-radius: 10px;
+}
+    /* Imagen de productos */
+.m-s-a-img{
+    margin: 1vh;
+    width: 30%;
+    background-color: #F5F5F7 ;
+    
+}
+    /* Imagen Mac */
+.m-s-a-img-mac{
+    margin: 1vh;
+    width: 45%;
+    background-color: #F5F5F7 ;
+    
+}
+    /* Ver mas productos */
+.m-s-a-s-a{
+    text-align: center;
+    font-size: 90%;
+    width: 80%;
+    background-color: rgb(0 113 227);
+    border-radius:20px;
+    color: white;
+}
+.m-s-a-p{
+    text-align: center;
+}
+
+    /* Fin main Home */
+     /* Nuevos lanzamientos Home */
+.sect-lanzamientos{
+    order: 4;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2vw;
+    background-color: #F5F5F7;
+}
+    /* h3 lanzamientos */
+.s-l-h3{
+    margin: 2vw 0 0 2vw;
+    font-size: 4vw;
+    width: 100%;
+}
+    /* Caja de productos */
+.s-l-art{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin: 2vw 1vw;
+    padding: 1vw;
+    background-color: white;
+    border-radius: 10px;
+    font-size: small;
+}
+    /* Imagen de producto */
+.s-l-a-img{
+    width: 30%;
+}
+    /* FIn Nuevos Lanzamientos */
+
+
+
+    .formulario-register {
+    width: 80%;
+    margin-left: 10%;
+    height: 100%;
+    background: #ffffff;
+    padding: 4%;
+    margin-top: 5%;
+    border-radius:41.3px;
+    }
+
+
+/*login.html / visualizacion 420 px*/
+/* 
+.formulario-login {
+    width: 80%;
+    margin-left: 10%;
+    height: 100%;
+    background: #ffffff;
+    padding: 4%;
+    margin-top: 8%;
+    border-radius: 33.2px;
+    }
+.formulario-login h2{
+    text-align: center;
+    padding: 40px 40px 10px 40px;
+    font-size: 36px;
+    } */
 }
