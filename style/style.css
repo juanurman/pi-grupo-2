@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 *{
@@ -147,6 +148,26 @@ footer{
 }
         /* Fin Footer */
 
+/* search result */
+
+/* main */
+.main-search {
+    background-color: #403f40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.m-h3 {
+    font-size: 46px;
+    align-items: center;
+    font-weight: 100;
+    font-family: 'Markazi Text';
+    color: #F5F5F7;
+}
+
+/*
 /* Home */
     /* Banner Home*/
 .banner{
@@ -1025,13 +1046,14 @@ hr{
 
 /* Fin aside product */
 
+/* register.html / visualizacion 420 px */
 .formulario-register {
     width: 80%;
     margin-left: 10%;
     height: 100%;
     background: #ffffff;
     padding: 4%;
-    margin-top: 5%;
+    margin-top: 8%;
     border-radius:41.3px;
     }
 
