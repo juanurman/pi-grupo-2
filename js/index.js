@@ -13,7 +13,7 @@ fetch(url)
     let producto = ""
     let lanzamiento = ""
     for (let i = 0; i < 21; i++) {
-        let img = productos[i].images
+        let img = productos[i].images[0]
         let titulo = productos[i].title
         let precio = productos[i].price
         let descripcion = productos[i].description
