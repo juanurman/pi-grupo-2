@@ -101,11 +101,17 @@ body {
 .h-n-s2-img-a{
     width: 70%;
 }
-/* Login y register */
+/* Login y */
 .h-n-s2-a{
     margin: 0 .5vw;
     color: white;
 }
+/* regsitro */
+.h-n-s2-a1{
+    margin: 0 .5vw;
+    color: white;
+}
+
 
             /* Fin Header */
 
