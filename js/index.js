@@ -1,7 +1,8 @@
-url = "https://dummyjson.com/products"
-
+const url = "https://dummyjson.com/products"
+const urlcat = "https://dummyjson.com/products/categories"
 fetch(url)
 
+// Productos del main
 .then(function(response){
     return response.json()
 })
@@ -21,28 +22,56 @@ fetch(url)
         if (i < 11) {
             producto += `
             <article class="m-s-a">
-                        <img src=${img} alt="imagen de un iphone" class="m-s-a-img">
-                        <h3 class="m-s-a-h3">${titulo}</h3>
-                        <p class="m-s-a-p">${descripcion}</p>
-                        <span class="m-s-a-sp">${precio}$</span>
-                        <a href="./product.html?id=${id}" class="m-s-a-s-a">Ver Detalle</a>
+            <img src=${img} alt="imagen de un iphone" class="m-s-a-img">
+            <h3 class="m-s-a-h3">${titulo}</h3>
+            <p class="m-s-a-p">${descripcion}</p>
+            <span class="m-s-a-sp">${precio}$</span>
+            <a href="./product.html?id=${id}" class="m-s-a-s-a">Ver Detalle</a>
             </article>
             ` 
         }    
         else if (i>11 & i< 21){
-        lanzamiento +=`<article class="s-l-art">
-                <img src="${img}" alt="imagen de unos Apple Vision Pro" class="m-s-a-img-mac">
-                <h4 class="s-l-a-h4">${titulo}</h4>
-                <p class="s-l-a-p">${descripcion}</p>
-                <span>${precio}</span>
-                <a href="./product.html?id=${id}" class="m-s-a-s-a">Ver Detalle</a>
+            lanzamiento +=`<article class="s-l-art">
+            <img src="${img}" alt="imagen de unos Apple Vision Pro" class="m-s-a-img-mac">
+            <h4 class="s-l-a-h4">${titulo}</h4>
+            <p class="s-l-a-p">${descripcion}</p>
+            <span>${precio}</span>
+            <a href="./product.html?id=${id}" class="m-s-a-s-a">Ver Detalle</a>
             </article>
-        `    
-    }}
-    mainDom.innerHTML += producto
-    lanzamientosDom.innerHTML += lanzamiento
+            `    
+        }}
+        mainDom.innerHTML += producto
+        lanzamientosDom.innerHTML += lanzamiento
+        
+    })
+    .catch(function(error){
+        console.log(`Surgio un error ${error}`)
+    })
+    
+    // Categorias del aside
+fetch(urlcat)
 
+.then(function(response){
+    return response.json()
 })
+
+.then(function(data){
+    let categorias = ""
+    let sectAside = document.querySelector(".a-s-ul")
+    for (let i = 0; i < 8; i++) {
+        const info = data[i];
+        let categoria = info.slug.toUpperCase()
+        categorias += `
+        <article class="a-s-ul-art">
+            <a href="./categoria.html?categoria=${categoria}" class="a-s-ul-a-a">${categoria}</a>
+        </article>
+        <hr class="hr-home">
+        ` 
+    }
+    sectAside.innerHTML += categorias 
+    
+})
+
 .catch(function(error){
     console.log(`Surgio un error ${error}`)
 })
