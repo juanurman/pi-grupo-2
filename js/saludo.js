@@ -1,19 +1,24 @@
-//recuperar info de sesion
-let data = sessionStorage.getItem("data)")
+let usuario = localStorage.getItem("dataUser");
 
-//convertir los datos en obj
-let dataObj = JSON.parse(data)
+let dataObj = JSON.parse(usuario);
 
-//recuperar elemtno del DOM saludo, mensaje ylista de los links
-let saludo = document.querySelector(".saludo");
-let mensaje = document.querySelector(".mensaje");
-let lista = document.querySelector(".lista");
+document.querySelector(".h-n-s2-a1").innerText = "logout"
 
-//preguntar si los datos existen
-
+let sectLogin = document.querySelector(".h-n-sect2")
 if (dataObj) {
-    //modificar textos en el dom
-saludo.innerText = ` Hola ${dataObj}`
-mensaje.innerText = ` Bienvenido a nuestra pagina`
-}
+    sectLogin.innerHTML = 
+
+
+    ` <section class="h-n-sect2">
+     <a href="" class="h-n-s2-a-img">
+    <img src="./img/icons8-paper-bag-64.png" alt="" class="h-n-s2-img-a">
+    </a>
+    <p class="h-n-s2-a" >Bienvenido! ${dataObj.email} </p>
+    <a href="./register.html" class="h-n-s2-a1" > Logout </a>
+    </section> `
+}   
+
+
+
+
 

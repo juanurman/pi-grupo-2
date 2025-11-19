@@ -20,7 +20,7 @@ form_login.addEventListener("submit", function(e){
     };
     let userString = JSON.stringify(userObj)
     
-    sessionStorage.setItem("dataUser", userString);
+    localStorage.setItem("dataUser", userString);
 
     this.submit();
     
