@@ -16,7 +16,7 @@ fetch(urlProducto)
     let titulo = document.querySelector(`#m-h2-name`);
     let marca = document.querySelector(`.m-s2-p-brand`);
     let imagen = document.querySelector(`.m-s-image`);
-    let descripcion = document.querySelector(`.m-s2-p-description`);
+    let description = document.querySelector(`.m-s2-p-description`);
     let precio = document.querySelector(`.m-s2-price`);
     let stock = document.querySelector(`.m-s2-p-stock`);
     let categoria = document.querySelector(`.m-s2-a-category-link`);
@@ -25,7 +25,7 @@ fetch(urlProducto)
     marca.innerText = data.brand;
     imagen.src = data.images;
     imagen.alt = data.title;
-    descripcion.innerText = data.description;
+    description.innerText = data.description;
     precio.innerText = `${data.price}$`;
     stock.innerText = `${data.stock} Unidades Restantes`;
     categoria.href = `./categoria.html?categoria=${data.category}`

@@ -589,38 +589,45 @@ width: 270px;
     align-items: center;
     background-color: #F5F5F7;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
+    
 }
+
 .m-h2{
-   width: 80%;
-   height: 2vh;
-   align-self: flex-end;
+    width: 100%;
+    height: 2vh;
+    margin-top: 1vh;
+    margin-left:5vw;
+    margin-bottom: 10vh;
+    align-self: flex-end;
     font-size: 3vw;
 }
+
 .m-sect1{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40%;
-    height: 50vh;
+    width: 50vw;
+    height: 70vh;
     background-color: white;
     margin-right: 10vw;
     border-radius: 10px;
-    
+    margin-bottom: 20px
 }
-.m-sect2{
+.m-s2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 50vh;
-    width: 30%;
+    width: 34%;
     padding: 0 1vw;
     border: 1px solid gray;
     border-radius: 10px;
-
 }
-.m-s-img{
+
+.m-s-image{
     width: 80%;
+    height: 80%;
     background-color: white;
 }
 .m-s2-h3{
@@ -643,7 +650,8 @@ width: 270px;
     color: white;
     border-radius: 10px;
     border: none;
-    margin-top: 4vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 /* Fin Main prodcut */
 /* Aside Product */
@@ -984,10 +992,10 @@ hr{
     height: 100vh;
 }
 .m-h2{
-    width: 80%;
-    height: 7vh;
-    margin: 2vw 0 0 0;
-    font-size: 7vw;
+    width: 100%;
+    height: 4vh;
+    margin-top: 4vh;
+    font-size: 6vw;
 }
 .m-sect1{
     display: flex;
@@ -995,20 +1003,22 @@ hr{
     align-items: center;
     width: 80%;
     margin: 0;
+    height: 40vh;
     background-color: white;
     border-radius: 10px;
-    
 }
-.m-sect2{
+
+.m-s2{
     display: flex;
     flex-direction: row;
     justify-content: start;
     flex-wrap: wrap;
-    height: 34vh;
-    width: 80%;
+    height: 36vh;
+    width: 100%;
     padding: 0 1vw;
     border: 1px solid gray;
     border-radius: 10px;
+    margin: 0 30px
 
 }
 .m-s-img{
@@ -1028,14 +1038,14 @@ hr{
     font-size: 12px;
 }
 .m-s2-b{
-    width: 20%;
+    width: 20vw;
     height: 3vh;
     align-self: flex-end;
     background-color: rgb(0 113 227);
     outline: none;
     border-radius: 10px;
     border: none;
-    margin-bottom: 1vh;
+    margin-bottom: 5vh;
 }
 /* Fin Main prodcut */
 /* Aside Product */
