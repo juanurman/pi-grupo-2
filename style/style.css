@@ -609,7 +609,6 @@ width: 270px;
     align-items: center;
     width: 50vw;
     height: 70vh;
-    background-color: white;
     margin-right: 10vw;
     border-radius: 10px;
     margin-bottom: 20px
@@ -673,10 +672,21 @@ width: 270px;
     background-color: white;
     height: 25vh;
     margin: 10vh 1vw;
+    width: 80vw;
+    border-radius: 5vh;
 }
 .a-s-a-img{
     width: 2vw;
     margin: 0 1vw;
+}
+.a-s-a-p-rating{
+    width: 70%;
+}
+.a-s-a-p-text{
+    width: 70%;
+}
+.a-s-a-p-date{
+    width: 70%;
 }
 .a-s-a-p{
     width: 70%;
@@ -1004,7 +1014,6 @@ hr{
     width: 80%;
     margin: 0;
     height: 40vh;
-    background-color: white;
     border-radius: 10px;
 }
 
@@ -1067,10 +1076,11 @@ hr{
     justify-self: center;
     align-items: center;
     background-color: white;
-    width: 25%;
-    height: 25vh;
+    width: 30%;
+    height: 30vh;
     margin: 3vh 1vw;
     font-size: 3vw;
+    border-radius: 6px;
 }
 .a-s-a-img{
     width: 2vw;
