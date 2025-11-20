@@ -1,6 +1,6 @@
-let form_login = document.querySelector(".form-login");
+let formLogin = document.querySelector("form-login");
 
-form_login.addEventListener("submit", function(e){
+formLogin.addEventListener("submit", function(e){
     e.preventDefault();
 
 

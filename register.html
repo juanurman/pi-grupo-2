@@ -47,22 +47,22 @@
         <section>
             <div class="formulario-register">
                 <h2 class="texto-caja-register">Registro de usuario</h2>
-                <form method="post" action="./login.html">
+                <form method="get" action="./login.html" class="form-register">
                     <div class="email" >
                         <label for="email"></label>
-                        <input class="input-mail" type="email"  placeholder="Email" >    
+                        <input class="input-mail" type="email"  placeholder="Email" name="email" >    
                     </div>
                     <div class="password">
                         <label for="password"></label>
-                        <input class="input-password" type="password" maxlength="20" placeholder="Contraseña" >
+                        <input class="input-password" type="password" maxlength="20" placeholder="Contraseña" name="password" >
                     </div>
                     <div class="password">
                         <label for="password"></label>
-                        <input type="password" maxlength="20" placeholder="Repetir contraseña" >
+                        <input type="password" maxlength="20" placeholder="Repetir contraseña" name="passwordConfirm" >
                     </div>
                     <div class="TOS">
-                        <label for="terminos y condiciones">¿Acepta los terminos y condiciones?</label>
-                        <input type="checkbox" >
+                        <label for="terminos y condiciones" >¿Acepta los terminos y condiciones?</label>
+                        <input type="checkbox" name="terminos">
                     </div>
                     <div class="registrar">
                         <button type="submit" class="ref-registrar">Registrarme</button>
@@ -98,6 +98,7 @@
             </section>
         </footer>
     <!-- Fin del footer -->
-     <script src="./js/registro.js"></script>
+     <script src="./js/register.js"></script>
+     <script src="./js/logout.js"></script>
 </body>
 </html>
