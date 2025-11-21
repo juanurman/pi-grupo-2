@@ -3,21 +3,20 @@ PASO 1: Obtener el término de búsqueda directamente de la URL.
  */
 
 const productsAPI = "https://dummyjson.com/products";
-let tituloBusqueda = document.querySelector(".searchTitle"); 
+let searchTitle = document.querySelector(".searchTitle"); 
 const contenedorResultados = document.querySelector(".contenedorResultados");
 const parametrosURL = new URLSearchParams(window.location.search);
-const tituloBuscado =parametrosURL.get('query'); 
+const terminoBusqueda =parametrosURL.get('query'); 
 
 /*ME resguardo por posibles errores, qs vacio, etc */
 function comenzarBusqueda () {
-    if (!tituloBuscado) {
-        alert('Error: Por favor, use el buscador del Header.')
-        tituloBusqueda.innerText = "Error: Por favor, use el buscador del Header.";
+    if (!terminoBusqueda) {
+        let searchTitle = document.querySelector(".searchTitle"); 
+        searchTitle.innerText = "Error: Por favor, use el buscador del Header.";
         return; 
     }
-
-    if (tituloBuscado) {
-        tituloBuscado.innerText = `Resultados de búsqueda para: ${tituloBuscado}`;
+    if (searchTitle) {
+        terminoBusqueda.innerText = `Resultados de búsqueda para: ${terminoBusqueda}`;
     }
 };
 
@@ -27,15 +26,15 @@ fetch(productsAPI)
         })
         .then(function(data) {
             let busquedasSimilares = 0; 
-            const tituloBusqueda = tituloBuscado.toLowerCase();
+            const terminoBusquedaMin = terminoBusqueda.toLowerCase();
             let resultadosHTML = ''; 
 
             
             for (let i = 0; i < data.products.length; i++) {
                 const product = data.products[i];
                 const productTitle = product.title.toLowerCase();
-                    if (productTitle.includes(tituloBusqueda)) {
-                    busquedasSimilares += 1; 
+                    if (productTitle.includes(terminoBusquedaMin)) {
+                    busquedasSimilares ++; 
 
                     
                     resultadosHTML += `
@@ -57,18 +56,16 @@ fetch(productsAPI)
                 if (busquedasSimilares > 0) {
                     contenedorResultados.innerHTML = resultadosHTML;
                 } else {
-                    contenedorResultados.innerHTML = `No se encontraron resultados para: ${tituloBuscado}`;
+                    contenedorResultados.innerText = `No se encontraron resultados para: ${terminoBusqueda}`;
                 }
             
         }
     )
 
-        .catch(function(error) {
+.catch(function(error) {
             console.error("El error es: " + error);
-        
-        if (tituloBuscado) {
-            tituloBuscado.textContent = "Error al cargar los datos. Intente más tarde.";
-            }
-        });
+            searchTitle.innerText = "Error al cargar los datos. Intente más tarde.";
+    });
+        ;
 
 document.addEventListener('DOMContentLoaded', comenzarBusqueda);
