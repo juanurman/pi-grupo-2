@@ -362,13 +362,13 @@ width: 270px;
 .searchTitle {
     color: white;
     font-size: 32px;
-    margin: 40px 0;
+    margin: 40px 20vh;
 }
 
 .contenedorResultados {
     font-size: 16px; 
     color: grey;
-    margin-bottom: 50px;
+    margin-bottom: 38vh;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -378,6 +378,7 @@ width: 270px;
 /* Contenedor del Artículo de Resultado (m-s-result-item) */
 .m-s-result-item {
     display: flex; 
+    flex-direction: column;
     width: 90%; 
     max-width: 1000px;
     align-items: center; 
@@ -387,14 +388,8 @@ width: 270px;
     border-radius: 8px;
     background-color: #333; 
 }
-
-.m-s-image-product{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: auto;
-    margin-right: 15px;
+.m-s-info-img{
+    width: 20vw;
 }
 
 .m-s-image-product img {

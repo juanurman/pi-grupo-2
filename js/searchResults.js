@@ -59,15 +59,11 @@ function realizarBusqueda() {
                 
                 resultadosHTML += `
                     <article class="m-s-result-item"> 
-                        <div class="m-s-image-product">
-                            <img src="${product.images[0]}" alt="${product.title}">
-                        </div>
-                        <div class="m-s-info">
+                            <img class="m-s-info-img"src="${product.images[0]}" alt="${product.title}"
                             <h3 class="m-s-info-title" >${product.title}</h3>
                             <p class="m-s-info-description" >${product.description}</p>
-                            <p class="m-s-info-price" ><b>$${product.price}</b></p>
-                            <a href="./product.html?id=${product.id}" class="m-s-info-detail>Ver detalle</a>
-                        </div>
+                            <p class="m-s-info-price"><b>$${product.price}</b></p>
+                            <a href="./product.html?id=${product.id}" class="m-s-info-detail">Ver detalle</a>
                     </article>
                 `;
             }

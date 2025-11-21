@@ -31,7 +31,7 @@ fetch(urlProducto)
     precio.innerText = `${data.price}$`;
     stock.innerText = `${data.stock} Unidades Restantes`;
     categoria.href = `./categoria.html?categoria=${data.category}`;
-    categoria.innerText = `${data.category}`
+    categoria.innerText = `${data.category.toUpperCase()}`
     tags.innerText = data.tags;
 
 //reviews
