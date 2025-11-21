@@ -202,7 +202,6 @@ footer{
     margin: 4% 0;
 }
 
-
 /* Home */
     /* Banner Home*/
 .banner{
@@ -358,14 +357,79 @@ width: 270px;
 }
     /* Fin aside Home*/
 
-    /* Search Results */
-    .searchTitle {
+    /* Search Results Pagina En si */
+ /* Search Results Pagina En si */
+.searchTitle {
     color: white;
-    font-size: 40px;
-    margin: 40vh 0;
+    font-size: 32px;
+    margin: 40px 0;
 }
 
+.contenedorResultados {
+    font-size: 16px; 
+    color: grey;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+}
 
+/* Contenedor del Artículo de Resultado (m-s-result-item) */
+.m-s-result-item {
+    display: flex; 
+    width: 90%; 
+    max-width: 1000px;
+    align-items: center; 
+    margin-bottom: 25px; 
+    padding: 15px; 
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #333; 
+}
+
+.m-s-image-product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.m-s-image-product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.m-s-info{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    height: auto;
+    width: 70%; 
+    padding: 15px 1vw;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 14px; 
+}
+
+.m-s-info-description, .m-s-info-price, .m-s-info-title, .m-s-title-detail{
+    margin: 5px 0;
+}
+
+.m-s-info-title {
+    font-size: 18px;
+}
+
+.m-s-description{
+    font-size: 13px;
+}
+
+.m-s-info-price b { 
+    font-size: 16px;
+    color: #4CAF50;
+}
      /* Nuevos lanzamientos Home */
 .sect-lanzamientos{
     order: 4;

@@ -1,71 +1,90 @@
-/*
-PASO 1: Obtener el término de búsqueda directamente de la URL.
- */
+const searchButton = document.querySelector(".h-n-s1-f-b"); 
+const searchInput = document.querySelector(".h-n-s1-f-i"); 
+const resultPage = "./search-results.html";
 
-const productsAPI = "https://dummyjson.com/products";
-let searchTitle = document.querySelector(".searchTitle"); 
+    searchButton.addEventListener('click', function(e) {
+        const searchTerm = searchInput.value;
+
+        if (searchTerm.length < 3) {
+            e.preventDefault(); 
+            alert("Por favor, introduce un mínimo de 3 caracteres para la búsqueda.");
+            return; 
+        }
+
+        const finalURL = `${resultPage}?query=${searchTerm}&sortBy=title&order=asc`;
+        window.location.href = finalURL;
+    });
+
+const searchTitle = document.querySelector(".searchTitle"); 
 const contenedorResultados = document.querySelector(".contenedorResultados");
 const parametrosURL = new URLSearchParams(window.location.search);
-const terminoBusqueda =parametrosURL.get('query'); 
 
-/*ME resguardo por posibles errores, qs vacio, etc */
+const terminoBusqueda = parametrosURL.get('query'); 
+const sortBy = parametrosURL.get('sortBy');
+const order = parametrosURL.get('order');
+
 function comenzarBusqueda () {
-    if (!terminoBusqueda) {
-        let searchTitle = document.querySelector(".searchTitle"); 
-        searchTitle.innerText = "Error: Por favor, use el buscador del Header.";
-        return; 
+    if (!terminoBusqueda || terminoBusqueda.length < 3) {
+            searchTitle.innerText = "Error: Búsqueda incompleta o inválida.";
+        return false; 
     }
-    if (searchTitle) {
-        terminoBusqueda.innerText = `Resultados de búsqueda para: ${terminoBusqueda}`;
-    }
+        searchTitle.innerText = "Resultados de búsqueda para: " + terminoBusqueda;
+    return true;
 };
 
-fetch(productsAPI)
+
+function realizarBusqueda() {
+    let searchAPI = "https://dummyjson.com/products/search?q=" + terminoBusqueda;
+
+    if (sortBy && order) {
+        searchAPI += "&sortBy=" + sortBy + "&order=" + order;
+    }
+
+    fetch(searchAPI)
         .then(function(response) {
             return response.json(); 
         })
         .then(function(data) {
-            let busquedasSimilares = 0; 
             const terminoBusquedaMin = terminoBusqueda.toLowerCase();
+            
+            const resultadosSoloEnTitulo = data.products.filter(function(product) {
+                return product.title.toLowerCase().includes(terminoBusquedaMin);
+            });
+
+            let busquedasSimilares = resultadosSoloEnTitulo.length; 
             let resultadosHTML = ''; 
-
             
-            for (let i = 0; i < data.products.length; i++) {
-                const product = data.products[i];
-                const productTitle = product.title.toLowerCase();
-                    if (productTitle.includes(terminoBusquedaMin)) {
-                    busquedasSimilares ++; 
-
-                    
-                    resultadosHTML += `
-                        <article class="result-item"> 
+            for (let i = 0; i < busquedasSimilares; i++) {
+                const product = resultadosSoloEnTitulo[i];
+                
+                resultadosHTML += `
+                    <article class="m-s-result-item"> 
+                        <div class="m-s-image-product">
                             <img src="${product.images[0]}" alt="${product.title}">
-                            <div class="info">
-                                <h3>${product.title}</h3>
-                                <p>${product.description}</p>
-                                <p>$${product.price.toFixed(2)}</p>
-                                <a href="./product-detail.html?id=${product.id}">Ver detalle</a>
-                            </div>
-                        </article>
-                        `;
-                    }
-                }
+                        </div>
+                        <div class="m-s-info">
+                            <h3 class="m-s-info-title" >${product.title}</h3>
+                            <p class="m-s-info-description" >${product.description}</p>
+                            <p class="m-s-info-price" ><b>$${product.price}</b></p>
+                            <a href="./product.html?id=${product.id}" class="m-s-info-detail>Ver detalle</a>
+                        </div>
+                    </article>
+                `;
+            }
             
-            
-            // render
-                if (busquedasSimilares > 0) {
-                    contenedorResultados.innerHTML = resultadosHTML;
-                } else {
-                    contenedorResultados.innerText = `No se encontraron resultados para: ${terminoBusqueda}`;
-                }
-            
-        }
-    )
-
-.catch(function(error) {
+            if (busquedasSimilares > 0) {
+                contenedorResultados.innerHTML = resultadosHTML;
+            } else {
+                contenedorResultados.innerText = "No se encontraron resultados para: " + terminoBusqueda;
+            }
+        })
+        .catch(function(error) {
             console.error("El error es: " + error);
-            searchTitle.innerText = "Error al cargar los datos. Intente más tarde.";
-    });
-        ;
+        });
+}
 
-document.addEventListener('DOMContentLoaded', comenzarBusqueda);
+document.addEventListener('DOMContentLoaded', function() {
+    if (comenzarBusqueda()) { 
+        realizarBusqueda();
+    }
+});
