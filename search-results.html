@@ -20,8 +20,7 @@
             <!-- Buscador -->
             <section class="h-n-sect1">
                 <form action="./search-results.html" method="get" class="h-n-s1-f" >
-                    <input type="text" placeholder="¿Qué estas buscando?"
-                    class="h-n-s1-f-i">
+                    <input type="text" placeholder="¿Qué estas buscando?" class="h-n-s1-f-i" name="query">
                     <a href="">
                     <button type="submit" class="h-n-s1-f-b">
                         <img src="./img/icons8-magnifying-glass-50.png"alt="imagen de una lupa" class="h-n-s1-f-b-img">
@@ -44,93 +43,13 @@
     
     <!-- Main -->
     <main class="main-search">
-        <section>
-        <h3 class="m-h3">No pudimos encontrar "iphone 18"</h3>
-        <img src="./img/res-nott-found.png" class="ref-lupa-resultados">
+        <h1 class='searchTitle'> Cargnado resultados.... </h1>
+        <section class="resultsContainer">
+
         </section>
     </main>
     <!-- Fin Main -->
-    
-    <!--Nuevos lanzamientos -->
-    <section class="sect-lanzamientos-search-results">
-            <h3 class="search-s-l-h3">Productos similares a tu busqueda</h3>
-            <article class="s-l-art">
-                <img src="./img/productos/iphone-13-1.png" alt="Iphone 13" class="m-s-a-img-mac">
-                <h4 class="s-l-a-h4">Iphone</h4>
-                <p class="s-l-a-p">Iphone 13</p>
-                <span>400$</span>
-                <a href="./product.html" class="m-s-a-s-a">Ver Detalle</a>
-            </article>
-            <article class="s-l-art">
-                <img src="./img/productos/iphone-13-2.jpg" alt="Iphone 13 Pro Max" class="s-l-a-img">
-                <h4 class="s-l-a-h4">Iphone</h4>
-                <p class="s-l-a-p">Iphone 13 Pro Max</p>
-                <span>450$</span>
-                <a href="./product.html" class="m-s-a-s-a">Ver Detalle</a>
-            </article>
-            <article class="s-l-art">
-                <img src="./img/productos/iphone-14-1.jpg" alt="Iphone 14" class="s-l-a-img">
-                <h4 class="s-l-a-h4">Iphone</h4>
-                <p class="s-l-a-p">Iphone 14</p>
-                <span>500$</span>
-                <a href="./product.html" class="m-s-a-s-a">Ver Detalle</a>
-            </article>
-            <article class="s-l-art">
-                <img src="./img/productos/iphone-14-2.png" alt="Iphone 14 Pro Max" class="s-l-a-img">
-                <h4 class="s-l-a-h4">Iphone</h4>
-                <p class="s-l-a-p">Iphone 14 Pro Max</p>
-                <span>600$</span>
-                <a href="./product.html" class="m-s-a-s-a">Ver Detalle</a>
-            </article>
-            <article class="s-l-art">
-                <img src="./img/productos/iphone-15-1.png" alt="Iphone 15" class="s-l-a-img">
-                <h4 class="s-l-a-h4">Iphone</h4>
-                <p class="s-l-a-p">Iphone 15</p>
-                <span>700$</span>
-                <a href="./product.html" class="m-s-a-s-a">Ver Detalle</a>
-            </article>
-            
-            <article class="s-l-art">
-                <img src="./img/productos/iphone-15-2.png" alt="Iphone 15 Pro Max" class="s-l-a-img">
-                <h4 class="s-l-a-h4">Iphone </h4>
-                <p class="s-l-a-p">Iphone 15 Pro Max</p>
-                <span>750$</span>
-                <a href="./product.html" class="m-s-a-s-a">Ver Detalle</a>
-            </article>
-            
-            <article class="s-l-art">
-                <img src="./img/productos/iphone-16-1.webp" alt="Iphone 16" class="s-l-a-img">
-                <h4 class="s-l-a-h4">Iphone</h4>
-                <p class="s-l-a-p">Iphone 16</p>
-                <span>800$</span>
-                <a href="./product.html" class="m-s-a-s-a">Ver Detalle</a>
-            </article>
-            
-            <article class="s-l-art">
-                <img src='img/productos/iphone-16-2.png' alt="Iphone 16 Pro Max" class="s-l-a-img">
-                <h4 class="s-l-a-h4">Iphone</h4>
-                <p class="s-l-a-p">Iphone 16 Pro Max</p>
-                <span>1300$</span>
-                <a href="./product.html" class="m-s-a-s-a">Ver Detalle</a>
-            </article>
-            
-            <article class="s-l-art">
-                <img src="img/productos/iphone-17normal.jpeg" alt="Iphone 17" class="s-l-a-img">
-                <h4 class="s-l-a-h4">Iphone </h4>
-                <p class="s-l-a-p">Iphone 17 </p>
-                <span>1500$</span>
-                <a href="./product.html" class="m-s-a-s-a">Ver Detalle</a>
-            </article>
 
-            <article class="s-l-art">
-                <img src="./img/productos/iphone17-promax.jpeg" alt="Iphone 17 Pro Max" class="s-l-a-img">
-                <h4 class="s-l-a-h4">Iphone </h4>
-                <p class="s-l-a-p">Iphone 17 Pro Max</p>
-                <span>2000$</span>
-                <a href="./product.html" class="m-s-a-s-a">Ver Detalle</a>
-            </article>
-        </section>
-    <!-- Fin Nuevos Lanzamientos -->
     
     <!-- Footer -->
         <footer>
@@ -156,5 +75,6 @@
     <!-- Fin footer -->
     <script src="./js/saludo.js"></script>  
     <script src="./js/logout.js"></script>
+    <script src="./js/searchResults.js"></script>
 </body>
 </html>

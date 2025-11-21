@@ -358,6 +358,13 @@ width: 270px;
 }
     /* Fin aside Home*/
 
+    /* Search Results */
+    .searchTitle {
+    color: white;
+    font-size: 40px;
+    margin: 40vh 0;
+}
+
 
      /* Nuevos lanzamientos Home */
 .sect-lanzamientos{
